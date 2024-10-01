@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="shortcut icon" href="#" type="image/x-icon"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Quotes | YE.LAB</title><style>*,*:before,*:after{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}
+:root{--nav-height: 4rem;--main-margin-top: 2rem}:root[data-theme=Yamble]{--color-bg: #00171f;--color-text: #ffffff;--color-text-secondary: #007ea7;--color-highlight: #00a8e8}:root[data-theme=WWW]{--color-bg: #fff;--color-text: #000;--color-text-secondary: #999;--color-highlight: #0000ee}:root[data-theme=Woods]{--color-bg: #fefae0;--color-text: #283618;--color-text-secondary: #606c38;--color-highlight: #bc6c25}html{scroll-behavior:smooth}body{font-family:Verdana,Helvetica Neue,sans-serif;background-color:var(--color-bg);color:var(--color-text);padding-inline:1rem;max-width:30rem;margin-inline:auto}nav,.theme{padding-block:1rem .5rem;height:var(--nav-height)}nav{position:sticky;top:0;background-color:var(--color-bg);display:flex;align-items:center;gap:1rem;a{background-color:var(--color-text-secondary);color:var(--color-bg);text-decoration:none;border-radius:9999px;display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;&:hover{background-color:var(--color-highlight)}}&:after{content:"";width:100%;height:3rem;background:linear-gradient(to top,transparent,var(--color-bg));position:absolute;top:100%}}[data-open-theme] .theme{top:0}.theme{position:absolute;top:-100%;left:0;right:0;background-color:var(--color-bg);transition:top .3s ease;overflow:auto;display:flex;gap:2rem;label{border:1px solid transparent;font-size:14px;padding:.5rem 1rem;border-radius:9999px;display:flex;align-items:center;gap:1rem;&:has(input:checked){border-color:var(--color-highlight)}}ul{list-style:none;padding-left:0;display:flex}li{width:1.25rem;height:1.25rem;border:2px solid white;border-radius:50%;&:not(:first-child){margin-left:-.25rem}}}main{display:flex;flex-direction:column;gap:10rem;margin-top:var(--main-margin-top)}.quote-wrapper{font-size:15px;scroll-margin-top:calc(var(--nav-height) + var(--main-margin-top));h1{font-size:13px}a{color:var(--color-text);text-decoration:none;border-bottom:1px solid;&:hover{color:var(--color-highlight);border-bottom:2px solid}}p,blockquote,footer{margin-block:1rem}footer{font-size:13px;ul{list-style:none;padding-left:0;display:flex;gap:.5rem}a,.tag{color:var(--color-text-secondary)}li:nth-child(2):before{content:"·";margin-right:.5rem}}blockquote{border-left:1px solid var(--color-highlight);margin-inline:0;padding-left:1rem;ul,ol{padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}}}
+</style><script type="module">const n=document.getElementById("shuffle");let o=[];document.querySelectorAll("article.quote-wrapper").forEach(e=>o.push(e.id));m();n.addEventListener("click",()=>{setTimeout(m,0)});function m(){const e=l(o);n.href=`#${e}`}function l(e){return e[Math.floor(Math.random()*e.length)]}const c=document.getElementById("theme"),u=document.getElementById("theme-toggle");c.addEventListener("click",e=>e.stopPropagation());u.addEventListener("click",e=>{e.stopPropagation(),document.documentElement.dataset.openTheme="true"});document.addEventListener("click",()=>{document.documentElement.dataset.openTheme==="true"&&document.documentElement.removeAttribute("data-open-theme")});c.addEventListener("change",function(){const e=this.theme.value;document.documentElement.dataset.theme=e,document.documentElement.removeAttribute("data-open-theme"),localStorage.setItem("/little-sites/quotes/theme",e)});let t=localStorage.getItem("/little-sites/quotes/theme");const d="Yamble";t||(t=d,localStorage.setItem("/little-sites/quotes/theme",t));document.documentElement.dataset.theme=t;document.querySelector(`input[name="theme"][value=${t}]`).checked=!0;
+</script></head> <body>  <nav> <a id="theme-toggle" href="#theme" title="Change theme">Theme</a> <a id="shuffle" href="" title="Jump to random note">RAM</a> <a href="#top" title="Jump to top">TOP</a> <form id="theme" class="theme"> <label> <input type="radio" name="theme" value="Yamble" hidden> <span>Yamble</span> <ul> <li style="background-color: #00171f"></li><li style="background-color: #ffffff"></li><li style="background-color: #007ea7"></li><li style="background-color: #00a8e8"></li> </ul> </label><label> <input type="radio" name="theme" value="WWW" hidden> <span>WWW</span> <ul> <li style="background-color: #fff"></li><li style="background-color: #000"></li><li style="background-color: #999"></li><li style="background-color: #0000EE"></li> </ul> </label><label> <input type="radio" name="theme" value="Woods" hidden> <span>Woods</span> <ul> <li style="background-color: #fefae0"></li><li style="background-color: #283618"></li><li style="background-color: #606c38"></li><li style="background-color: #bc6c25"></li> </ul> </label> </form> </nav> <main> <article class="quote-wrapper" id="2024-07-23T1000"> <header> <h1> <a href="https://happypeter.github.io/learn-by-making.html" target="_blank"> Learn By Making </a> </h1> </header> <blockquote>
+<p>要做出一个东西来的冲动，我觉得首先是一种情怀，一种渴望用手工而不是说话的形式跟他人交流的愿望。</p>
+<p>...</p>
+<p>总之，让创作冲动指引你，<strong>如果你没有创作冲动，那就先去看一些人文类的书，恢复一下你对生活和人群的热爱</strong>， 创作的冲动从最本源上是一种与人交流的冲动。</p>
+</blockquote>
+<blockquote>
+<p>所以，不要再以页码和章节号来贯穿你的知识体系了， <strong>用一个个具体的作品来承载那些零碎的知识点更有效</strong>。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-07-23T1000"> <time datetime="">2024-07-23</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2024-07-23T1010"> <header> <h1> <a href="https://blog.samaltman.com/productivity" target="_blank"> Productivity - Sam Altman </a> </h1> </header> <blockquote>
+<p>I like to start and end each day <strong>with something I can really make progress on</strong>.</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-07-23T1010"> <time datetime="">2024-07-23</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2024-07-06T1000"> <header> <h1> <a href="https://happyxiao.com/monkey/" target="_blank"> 成为百万猴子 | happy xiao </a> </h1> </header> <blockquote>
+<p>如果我们能像猴子一样，<strong>清空大脑，不计较成败，只是专注在打字上面的话</strong>，还能创造出更多作品。</p>
+</blockquote>
+<blockquote>
+<p>拿我举例，大部分的文字都不那么令我满意。但是，哪怕只是和自己比较，我们的作品中，也至少有一半能高于我们自己的平均水平。甚至，其中有十分之一，是让自己满意的作品。也就是说，如果一年写十篇博客，就会有一篇让我满意，那么写300篇，就会有30篇让我满意。两种情况，我应该选择后者。</p>
+</blockquote>
+<blockquote>
+<p>当我心无旁骛，写得更多，就会有更好的文章在不经意间诞生。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-07-06T1000"> <time datetime="">2024-07-06</time> </a> </li> <li class="tag">#writing</li> </ul> </footer> </article><article class="quote-wrapper" id="2024-07-05T1000"> <header> <h1> <a href="https://gomakethings.com/how-to-monetize-your-blog-in-3-easy-steps/" target="_blank"> How to Monetize Your Blog (In 3 Easy Steps!) | Go Make Things </a> </h1> </header> <blockquote>
+<ol>
+<li>做一些非常棒的事情。</li>
+<li><strong>向人们展示您所做的事情，并教他们如何做</strong>。</li>
+<li>重复。</li>
+</ol>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-07-05T1000"> <time datetime="">2024-07-05</time> </a> </li> <li class="tag">#writing</li> </ul> </footer> </article><article class="quote-wrapper" id="2024-01-14T1000"> <header> <h1> <a href="https://happyxiao.com/inspiring/" target="_blank"> 你需要信息还是启发？ | happy xiao </a> </h1> </header> <blockquote>
+<p>当我创作内容时，也希望通过自己的肺腑之言、切身感受启发到读者，而不只是写一些“如果你做到1、2、3，就能达成4、5、6”这类只是提供信息的文章。</p>
+<p>但读者并不都和我一样，大部分人很明确的知道自己要什么（其实不一定），所以我要么能提供他们需要的信息，要么就被忽略。这也是为什么我需要更接地气，创作不同形式内容的原因。</p>
+<p>如果你也有很 inspiring 的话想说，不妨和我一样，<strong>先通过足够优秀的 information 获得更多的听众，然后在他们卸下防备的时候，冷不丁地 inspire 一下</strong>。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-01-14T1000"> <time datetime="">2024-01-14</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2024-01-07T1000"> <header> <h1> <a href="https://happyxiao.com/media/" target="_blank"> 不要成为媒体 | happy xiao </a> </h1> </header> <blockquote>
+<p>邮件可能包含很多很酷的信息，但就是与作者无关。这样的 newsletter，只不过是传统媒体的翻版。</p>
+<p>我的建议是，你应该写 letter，而不是 news。<strong>你的内容，应该全部与你相关，它应该是你的经历，你的想法，哪怕转载，也要是你的观点，你的赞扬或批评</strong>。这封信，从头到尾都是你，你，你。</p>
+<p>当你开始写你自己，只写你自己，没有人再可以与你竞争，没有任何人可以比你更懂你自己。从此以后，每一个你敲下的字，每一封发出去的信，都将成为你的宇宙的一部分。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-01-07T1000"> <time datetime="">2024-01-07</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2024-01-02T1000"> <header> <h1> <a href="https://mp.weixin.qq.com/s/NMzj92UHlNBWHaUjUjcrww" target="_blank"> 旅行，PKM和蘑菇 - 我的2021年终总结 </a> </h1> </header> <blockquote>
+<p>我曾经一度笃信『读万卷书，行万里路』是自我提升和人生价值实现的不二法门，不过自打成为一个以内容创作为主业的数字游民后，我觉得单纯地读书和旅行还是缺了点什么。</p>
+<p>几年前当我无意间读到了本杰明.富兰克林下面这句话后突觉茅塞顿开：『<strong>Either write something worth reading or do something worth writing</strong>.』(人生在世，要么写点值得阅读的文字，要么做些值得写作的事情。)</p>
+<p>在即将过去的2021，我很庆幸自己做了很多值得写作的事情，希望我在2021年写下的文字为读到这里的你提供了价值。祝新年快乐！</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-01-02T1000"> <time datetime="">2024-01-02</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2024-01-02T1010"> <header> <h1> <a href="https://mp.weixin.qq.com/s/NMzj92UHlNBWHaUjUjcrww" target="_blank"> 旅行，PKM和蘑菇 - 我的2021年终总结 </a> </h1> </header> <blockquote>
+<p>而除了学会如何种植蘑菇这件事本身，我也从这个过程中得到了以下几点收获：</p>
+<p>如果你能把这个<strong>学习的过程</strong>完整地记录下来，并把你的<strong>心得体会和成败经验</strong>制作成内容分享到互联网上，你就会得到受众和流量，持之以恒，你就能一定能够通过它赚到钱。这其实也就是内容创业的基本模式。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2024-01-02T1010"> <time datetime="">2024-01-02</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-11-22T1000"> <header> <h1> <a href="https://mp.weixin.qq.com/s/8jpQppj6L7HCZuklj9wHMA" target="_blank"> 只以养活自己为目标，想自由其实不难 </a> </h1> </header> <blockquote>
+<p>之前在Twitter上看到@Patrick OShaughnessy 描述他的生活：我现在的生活是，学习、创作、分享、重复。</p>
+<p>和我现在的生活内核一模一样，工作内容特别简单：工作就是学习，学习就是工作。</p>
+<p>国外有很多博主也在过这样的生活，没有国内那么多花里胡哨令人焦虑的商业模式。就是：</p>
+<p>1，每天重复且大量的阅读、学习，<strong>然后创作变成作品分享出去</strong>。</p>
+<p>2，有一定「受众」的时候推出一些打磨好的产品（对他人的价值足够大），获得收入，然后学习成长之余专心服务自己的「客户」。</p>
+<p>这些人能生活得很好的核心在于：</p>
+<p>1，在做自己喜欢有热情的事情；</p>
+<p>2，他们在这些事情上有优势和积累；</p>
+<p>3，他们找到了与市场的结合点，<strong>能靠这件事创造的价值养活自己</strong>；</p>
+<p>大家如果希望自由职业或开启一项赚钱的副业也可以通过这3点来考虑。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-11-22T1000"> <time datetime="">2023-11-22</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-11-21T1000"> <header> <h1> <a href="https://mp.weixin.qq.com/s/K5Kt0sEyoEfwI5HtxeJJdg" target="_blank"> 持续播种和Build有价值东西 </a> </h1> </header> <blockquote>
+<p>自由职业后，我就一直在专注做<strong>积攒领先指标</strong>的事情：</p>
+<ul>
+<li>每天1～3篇优质阅读+笔记，同步到数据库</li>
+<li>每天20分钟以上脱离手机的散步思考时间</li>
+<li>每周3篇公众号文章发布（周三、周五、周日）</li>
+<li>每天手边书阅读3～5次，兴尽则止</li>
+<li>每天用30分钟写一条小报童（存一个礼拜再看是否依然认为值得发布）</li>
+<li>每工作40分钟休息一次（闭眼深呼吸、1分钟运动、房间里走动）</li>
+<li>早起和睡前各完成一次MauiHabit（闭眼感受幸福感）</li>
+<li>每周和一位朋友做深度交谈</li>
+</ul>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-11-21T1000"> <time datetime="">2023-11-21</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-10-28T1000"> <header> <h1> <a href="https://happyxiao.com/shannon/" target="_blank"> 以香农定律处理互联网信息 | happy xiao </a> </h1> </header> <blockquote>
+<p>首先，我不追求读得更快。有时，一篇文章中的某个句子引起我的共鸣，我会停下来放任思维扩散。能引发我们思考的阅读，才是有效阅读。只是号称一年读完 n 本书，是没有意义的。<strong>我追求的是，一年获得了 n 个新的想法。</strong></p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-10-28T1000"> <time datetime="">2023-10-28</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-08-28T1000"> <header> <h1> <a href="https://mp.weixin.qq.com/s/37y6-vYtNvm0kktLPL5SPQ" target="_blank"> Weekly021：间歇性无意义感、焦虑是内在于现代性的、期望管理 </a> </h1> </header> <blockquote>
+<p>唯一的办法就是先不想这些，就是不断告诉自己 keep doing  ，力所能及的做一些有积极意义，至少是<strong>滋养自己</strong>的事情，最后总能走出来，并构建出新的人生意义感。</p>
+<p><strong>这两年我开始更注重「信念」和「原则」</strong>，如果想要获得内心的稳定，想要对自己和生活更有掌控感，这两者是比意义感更可靠的。</p>
+<p>比如，我的一个信念就是做一个创作者，我要保持好奇心、保持学习的状态，这个是在任何时候都不会改变的，哪怕在我极度消极的时候我也还是能做好这方面的事情，这让我不知不觉地一直在变得更好。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-08-28T1000"> <time datetime="">2023-08-28</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-08-13T1000"> <header> <h1> <a href="https://www.swyx.io/create-luck" target="_blank"> How to Create Luck </a> </h1> </header> <blockquote>
+<p>Jason has a really simple model of how to grow your LSA - do more things, and tell more people about it. <strong>Doing and Telling</strong>.</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-08-13T1000"> <time datetime="">2023-08-13</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-06-26T1000"> <header> <h1> <a href="https://engfluent.com/how-to-improve-english-listening-skills/" target="_blank"> How to Really Improve Your English Listening Skills – EngFluent </a> </h1> </header> <blockquote>
+<p>相反，请专注于每天听英语。即使每天听那么10到15分钟。</p>
+<p>在这个阶段，<strong>你的目标不是提高你的听力，而是养成每天听英语的习惯</strong>。一旦养成了习惯，提高听力将会变得更简单。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-06-26T1000"> <time datetime="">2023-06-26</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2023-06-09T1000"> <header> <h1> <a href="https://lutaonan.com/blog/svelte/" target="_blank"> 我对 Svelte 的看法 | Randy&#39;s Blog | Randy&#39;s Blog </a> </h1> </header> <blockquote>
+<p>最后想说的是，学习一个框架或者一个语言，不一定是非要把它用到生产环境才算是有用。我很喜欢看新的技术和学不同的语言，<strong>更多地是因为想看看在面对同一个问题的时候，不同的人解决问题的思路是怎么样的，这才是框架和语言真正的魅力</strong>。比如说你不一定非要用 Elm, 但是你一定能从 Elm 的设计学到点什么。Svelte 也一样 😀。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2023-06-09T1000"> <time datetime="">2023-06-09</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2022-01-13T1000"> <header> <h1> <a href="https://book.douban.com/subject/4822685/" target="_blank"> 编码 (豆瓣) </a> </h1> </header> <blockquote>
+<p>作者序：学习技术发展史的重要意义正在于此：追溯的历史越久远，技术的脉络就变得越清晰。因此，我们需要做的就是确定某些关键的历史阶段，在这些阶段，技术最天然、最本质的一面将清晰可见。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2022-01-13T1000"> <time datetime="">2022-01-13</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2022-01-12T1000"> <header> <h1> <a href="https://book.douban.com/subject/26941639/" target="_blank"> 网络是怎样连接的 (豆瓣) </a> </h1> </header> <blockquote>
+<p>c1附-网络术语其实很简单：词汇是人类创造的，如果能理解词汇创造者的思路，也就能理解这个词的真正含义。而理解网络中每个词汇的真正含义之后，对网络的理解也会更加深入，反过来也会更加理解设计和创造网络的那些人。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2022-01-12T1000"> <time datetime="">2022-01-12</time> </a> </li>  </ul> </footer> </article><article class="quote-wrapper" id="2021-11-16T1000"> <header> <h1> <a href="https://book.douban.com/subject/1013208/" target="_blank"> 如何阅读一本书 (豆瓣) </a> </h1> </header> <blockquote>
+<p>c16 如何阅读历史书</p>
+<p>...</p>
+<p>结果，就因为修昔底德在公元前 5 世纪的一些观点，整个世界的历史都逐渐被一点点虽然极为微小，却仍然可以察觉的改变所影响。</p>
+<p>因此我们阅读修昔底德的历史，<strong>不是因为他多么准确地描述出在他写书之前的那个世界，而是因为他对后代发生的事有一定的影响力。</strong></p>
+<p>所以我们阅读他的书其实是为了了解目前发生的事。</p>
+<p>...</p>
+<p>总之，阅读历史的两个要点是：…… 第二，阅读历史时，不只要关心在过去某个时间、地点真正发生了什么事，还要读懂在任何时空之中，尤其是现在，人们为什么会有如此这般行动的原因。</p>
+<p>...</p>
+<p>历史会建议一些可行性，因为那是以前的人已经做过的事。既然是做过的事，就可能再做一次，或是可以避免再做。</p>
+</blockquote>
+ <footer> <ul> <li> <a href="#2021-11-16T1000"> <time datetime="">2021-11-16</time> </a> </li>  </ul> </footer> </article> </main>  </body></html>  
